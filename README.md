@@ -4,40 +4,34 @@ AtliQ Hardware, a rapidly growing company, embarked on its first data analytics 
 
 The objective was to transform raw data into meaningful visualizations that help answer critical business questions, identify performance trends, and drive strategic planning across the organization.
 
+# Data Sources
+
+The dashboard integrates data from two main sources:
+
+* **Excel/CSV Files:** Includes targets, market share data, and other related metrics collected from Excel and CSV files.
+
+* **MySQL Database:** Retrieves key fact and dimension tables across all departments to support comprehensive analysis.
+
 # Power BI Skills and Techniques Gained
 
 Throughout this project, I explored a wide range of Power BI features and best practices, gaining hands-on experience in building interactive, dynamic dashboards. Key skills and techniques I learned include:
 
-Asking the right business questions before initiating the project to align with stakeholder goals
-
-* Creating calculated columns and measures using DAX for advanced analytics
+* Creating calculated columns and measures using DAX language
 
 * Building robust data models with proper relationships and hierarchies
 
 * Implementing bookmarks to toggle between different visuals
 
-* Enabling smooth page navigation using buttons
+* Enabling smooth page navigation using buttons.
 
-Using the DIVIDE function to avoid divide-by-zero errors
+* Designing dynamic titles that respond to filters and slicers
 
-Creating a custom date table using M language in Power Query
+* Applying KPI indicators to track performance effectively
 
-Designing dynamic titles that respond to filters and slicers
+* Using conditional formatting with icons or color scales to highlight insights
 
-Applying KPI indicators to track performance effectively
+* Publishing reports to Power BI Service
 
-Using conditional formatting with icons or color scales to highlight insights
 
-Validating data for accuracy and consistency
 
-Publishing reports to Power BI Service
 
-Setting up a personal gateway for scheduled data refresh
-
-Creating and managing Power BI Apps for organized report sharing
-
-Collaborating within workspaces and managing user access and permissions
-
-…and much more 😅
-
-This project helped solidify my understanding of Power BI and its real-world applications in business intelligence.
