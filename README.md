@@ -52,14 +52,14 @@ Throughout this project, I explored a wide range of Power BI features and best p
 # Dataset Overview
 A clear understanding of the available data is crucial before beginning any analysis. The dashboard relies on structured datasets from two main databases: gdb041 (sales and forecasting) and gdb056 (costs and pricing).
 
-<details> <summary><strong>🗂️ gdb041: Sales & Forecasting Data</strong></summary>
+
 🔸 Dimension Tables
 dim_customer
 Attribute	                               Description
 Markets	                                 27 (e.g., India, USA, Spain)
-Customers	75 unique customers across all markets
-Platforms	Brick & Mortar, E-commerce (Amazon, Flipkart)
-Sales Channels	Retailer, Direct, Distributor
+Customers	                               75 unique customers across all markets
+Platforms	                               Brick & Mortar, E-commerce (Amazon, Flipkart)
+Sales Channels	                         Retailer, Direct, Distributor
 dim_market
 Attribute	Description
 Markets	27 markets
