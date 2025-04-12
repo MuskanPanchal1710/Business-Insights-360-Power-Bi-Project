@@ -31,7 +31,7 @@ Throughout this project, I explored a wide range of Power BI features and best p
 * Using conditional formatting with icons or color scales to highlight insights
 
 * Publishing reports to Power BI Service
-
+* Data integration from various sources like Excel/CSV files, MySQL database, etc.
 
 
 
