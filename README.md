@@ -90,3 +90,16 @@ manufacturing_cost	Yearly manufacturing costs by product
 pre_invoice_deductions	Pre-invoice deduction percentages by customer and year
 post_invoice_deductions	Post-invoice and other deduction details
 
+erDiagram
+    dim_customer ||--o{ fact_sales_monthly : links
+    dim_customer ||--o{ fact_forecast_monthly : links
+    dim_market ||--o{ fact_sales_monthly : links
+    dim_market ||--o{ fact_forecast_monthly : links
+    dim_product ||--o{ fact_sales_monthly : links
+    dim_product ||--o{ fact_forecast_monthly : links
+
+    fact_sales_monthly {
+        date Month
+        int Sold_Quantity
+    }
+    
