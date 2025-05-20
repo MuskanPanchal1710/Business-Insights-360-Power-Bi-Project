@@ -84,6 +84,8 @@ Throughout this project, I explored a wide range of Power BI features and best p
 • Key metrics like forecasts, actuals, expenses, and deductions are captured in separate fact tables.
 
 • Most relationships are one-to-many (*:1) from dimension to fact tables, which ensures efficient filtering and reduces ambiguity in report visuals.
+![DAta model](https://github.com/user-attachments/assets/a1d63bb2-3e7c-4d1b-b455-5cf98cae390f)
+
 
 # 📊 Dashboard Views
 
