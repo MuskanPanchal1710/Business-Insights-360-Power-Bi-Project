@@ -100,7 +100,8 @@ Throughout this project, I explored a wide range of Power BI features and best p
 
 • Track net sales trends over time.
 
-![image](https://github.com/user-attachments/assets/556d5aa8-d223-4e26-b657-656caa744ef8)
+![image](https://github.com/user-attachments/assets/03548ccb-3dc8-4bc4-99fc-8e17aa60eeb1)
+
 
 📈 **Sales View**
 
