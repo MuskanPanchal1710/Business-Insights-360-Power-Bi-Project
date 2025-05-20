@@ -1,105 +1,154 @@
-# Business Insights 360
+# 🌐 Business Insights 360
 
-AtliQ Hardware, a rapidly growing company, embarked on its first data analytics initiative to gain a competitive edge in the market and embrace data-driven decision-making. This Power BI project was developed to support key stakeholders across various departments—Finance, Sales, Marketing, and Supply Chain—by providing actionable insights through interactive dashboards and reports.
+Atliq Hardware is a rapidly growing global company specializing in the sale of computers and computer accessories. The company operates through three primary sales channels:
 
+• **Retailers**
+
+• **Direct Sales**
+
+• **Distributors**
+
+As the company expanded, it became evident that decision-making based solely on surveys, intuition, and basic Excel analysis was no longer sufficient. In contrast, competitors are leveraging advanced analytics teams to drive data-backed strategies and maintain their edge in the market.
+Recognizing this gap, Atliq Hardware has committed to building its own Business Intelligence and Analytics capabilities. This strategic move aims to empower the organization with accurate insights and smarter decision-making to ensure long-term sustainability and competitiveness.
 The objective was to transform raw data into meaningful visualizations that help answer critical business questions, identify performance trends, and drive strategic planning across the organization.
 
-# Data Sources
+# 🚀 Project Overview
+A Power BI based project designed to provide detailed and interactive insights across core business functions—Finance, Sales, Marketing, Supply Chain, and Executive Management.This Powwr BI dashboard offers a unified platform to visualize and analyze business performance, enabling better decision-making through data-driven insights. Each view is tailored to a specific department to address key performance indicators and operational metrics.
+
+# 📂 Data Sources
 
 The dashboard integrates data from two main sources:
 
-* **Excel/CSV Files:** Includes targets, market share data, and other related metrics collected from Excel and CSV files.
+• **Excel/CSV Files:** Includes targets, market share data, and other related metrics collected from Excel and CSV files.
 
-* **MySQL Database:** Retrieves key fact and dimension tables across all departments to support comprehensive analysis.
+• **MySQL Database:** Retrieves key fact and dimension tables across all departments to support comprehensive analysis.
 
-# Power BI Skills and Techniques Gained
+# 🧠 Power BI Skills and Techniques Gained
 
 Throughout this project, I explored a wide range of Power BI features and best practices, gaining hands-on experience in building interactive, dynamic dashboards. Key skills and techniques I learned include:
 
-* Creating calculated columns and measures using DAX language
+• Creating calculated columns and measures using DAX language
 
-* Building robust Data models (Data Modeling)
+• Building robust Data models (Data Modeling)
 
-* Implementing bookmarks to toggle between different visuals
+• Implementing bookmarks to toggle between different visuals
 
-* Enabling smooth page navigation using buttons.
+• Enabling smooth page navigation using buttons.
 
-* Designing dynamic titles that respond to filters and slicers
+• Designing dynamic titles that respond to filters and slicers
 
-* Applying KPI indicators to track performance effectively
+• Applying KPI indicators to track performance effectively
 
-* Using conditional formatting with icons or color scales to highlight insights
+• Using conditional formatting with icons or color scales to highlight insights
 
-* Publishing reports to Power BI Service
-* Data integration from various sources like Excel/CSV files, MySQL database, etc.
+• Publishing reports to Power BI Service
+  
+• Data integration from various sources like Excel/CSV files, MySQL database, etc.
 
-# Business Terminology
-* Gross price
-* Pre-invoice deductions
-* Post-Invoice deductions
-* Net Invoice sale
-* Gross Margin
-* Net sales
-* Net profit
-* COGC - cost of goods sold
-* YTD - Year to Date
-* YTG - Year to Go
-* Direct
-* Retailer
-* Distributors
-* Consumer
-* FY-Fiscal Year
-# Dataset Overview
-A clear understanding of the available data is crucial before beginning any analysis. The dashboard relies on structured datasets from two main databases: gdb041 (sales and forecasting) and gdb056 (costs and pricing).
+# 💼📘Business Terminology
+
+• Gross price
+
+• Pre-invoice deductions
+
+• Post-Invoice deductions
+
+• Net Invoice sale
+
+• Gross Margin
+
+• Net sales
+
+• Net profit
+
+• COGC - cost of goods sold
+
+• YTD - Year to Date
+
+• YTG - Year to Go
+
+• Direct
+
+• Retailer
+
+• Distributors
+
+• Consumer
+ 
+• FY-Fiscal Year
+
+# 🧱 Data Modeling Overview   
+
+• In this project, we have implemented the Snowflake Schema data modeling approach, which helps maintain data normalization, enhances query performance, and ensures clarity in relationships between tables.
+
+• Key metrics like forecasts, actuals, expenses, and deductions are captured in separate fact tables.
+
+• Most relationships are one-to-many (*:1) from dimension to fact tables, which ensures efficient filtering and reduces ambiguity in report visuals.
+
+# 📊 Dashboard Views
+
+🏠 **Home Page View**
+
+**💰 Finance View**
+
+• Analyze Profit & Loss (P&L) statements.
+
+• Evaluate product-level performance.
+
+• Track net sales trends over time.
+
+📈 **Sales View**
+
+• Explore customer and product performance.
+
+• Use dynamic charts and interactive filters for granular analysis.
+
+• Discover top-performing customers and products.
+
+📣 **Marketing View**
+
+• Gain insight into product popularity across regions.
+
+• Evaluate campaign and regional effectiveness.
+
+• Monitor growth trends and marketing performance metrics.
+
+🏭 **Supply Chain View**
+
+• Measure forecast accuracy and demand planning efficiency.
+
+• Visualize net forecast error metrics.
+
+• Identify discrepancies between forecasted and actual demand.
+
+🧑‍💼 **Executive View**
+
+• Access high-level business KPIs at a glance.
+
+• View revenue breakdowns by region and segment.
+
+• Stay updated with strategic performance summaries.
+
+📦 **Product View**
+
+• Highlights Top & Bottom 5 products by GM% (Gross Margin Percentage) growth across overall markets.
+
+• Users can filter by year, quarter, and market to analyze product performance trends over time.
+
+• Enables quick comparison of current vs. last year’s GM% to identify growth drivers and underperformers.
+
+# Conclusion
+This report provides a solid foundation for data-driven decision-making, enabling stakeholders to make informed choices with confidence. By leveraging the insights presented, users can effectively address a wide range of questions that arise from different business scenarios. Ultimately, this analysis supports continuous improvement and strategic planning, driving better outcomes and business growth.
 
 
-🔸 Dimension Tables
-dim_customer
-Attribute	                               Description
-Markets	                                 27 (e.g., India, USA, Spain)
-Customers	                               75 unique customers across all markets
-Platforms	                               Brick & Mortar, E-commerce (Amazon, Flipkart)
-Sales Channels	                         Retailer, Direct, Distributor
-dim_market
-Attribute	Description
-Markets	27 markets
-Sub-zones	7 sub-zones
-Regions	4 (APAC, EU, LATAM, nan)
-dim_product
-Attribute	Description
-Divisions	P&A (Peripherals, Accessories, PC), N&S (Networking, Storage)
-Categories	14 total (e.g., Internal HDD, Keyboard)
-Variants	Multiple variants per product
-🔹 Fact Tables
-fact_forecast_monthly
-Attribute	Description
-Date Format	Monthly granularity (start date of month)
-Purpose	Forecasts customer needs to: improve satisfaction, reduce warehouse costs
-Structure	Denormalized for analytics; includes forecasted quantity
-fact_sales_monthly
-Attribute	Description
-Structure	Similar to fact_forecast_monthly
-Key Difference	Final column contains actual sold quantity instead of forecasted value
-</details>
-<details> <summary><strong>🗂️ gdb056: Cost & Pricing Data</strong></summary>
-🔸 Cost & Pricing Tables
-Table Name	Description
-freight_cost	Travel and logistics costs per market and fiscal year
-gross_price	Product gross pricing by product code
-manufacturing_cost	Yearly manufacturing costs by product
-pre_invoice_deductions	Pre-invoice deduction percentages by customer and year
-post_invoice_deductions	Post-invoice and other deduction details
 
-erDiagram
-    dim_customer ||--o{ fact_sales_monthly : links
-    dim_customer ||--o{ fact_forecast_monthly : links
-    dim_market ||--o{ fact_sales_monthly : links
-    dim_market ||--o{ fact_forecast_monthly : links
-    dim_product ||--o{ fact_sales_monthly : links
-    dim_product ||--o{ fact_forecast_monthly : links
 
-    fact_sales_monthly {
-        date Month
-        int Sold_Quantity
-    }
-    
+
+
+
+
+
+
+
+
+
