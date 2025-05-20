@@ -88,8 +88,7 @@ Throughout this project, I explored a wide range of Power BI features and best p
 
 # 📊 Dashboard Views
  
-• [View Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTIzY2M5MzctMmE5Yi00ZDdjLTlhMWEtYjM4NWM0NTc2YjdiIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
-
+• [View Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYTIzY2M5MzctMmE5Yi00ZDdjLTlhMWEtYjM4NWM0NTc2YjdiIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=500fab7e96e798b81b5c)
 🏠 **Home Page View**
 
 ![image](https://github.com/user-attachments/assets/60ab23f6-c40c-408e-aaf9-470e3c9fcb01)
